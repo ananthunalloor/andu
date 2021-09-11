@@ -30,7 +30,10 @@ export default {
   css: [
     '@/assets/css/main.css'
   ],
-
+  
+  purgeCSS: {    
+    whitelist: ['dark-mode'],  
+  },
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
   ],
@@ -45,6 +48,7 @@ export default {
     // https://go.nuxtjs.dev/tailwindcss
     '@nuxtjs/tailwindcss',
     'nuxt-animejs',
+    '@nuxtjs/color-mode'
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules

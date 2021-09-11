@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Qwigley&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tourney:wght@300;400;500;600;700&display=swap');
 
 .nunito{
     font-family: Nunito;
@@ -6,4 +8,7 @@
 .comforta
 {
     font-family: Comfortaa;
+}
+.qwigley{
+    font-family: Tourney;
 }

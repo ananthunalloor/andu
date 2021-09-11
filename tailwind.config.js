@@ -10,11 +10,20 @@ module.exports = {
   },
   darkMode: 'class', // or 'media' or 'class'
   theme: {
+    darkSelector: '.dark-mode',
     extend: {
+      colors:{
+        'off-gray': '#222831',
+        'off-white': '#FCFCFC',
+      }
     },
   },
   variants: {
-    extend: {},
+    backgroundColor: ['dark', 'dark-hover', 'dark-group-hover', 'dark-even', 'dark-odd', 'hover', 'responsive'],
+    borderColor: ['dark', 'dark-focus', 'dark-focus-within', 'hover', 'responsive'],
+    textColor: ['dark', 'dark-hover', 'dark-active', 'hover', 'responsive']
   },
-  plugins: [],
+  plugins: [
+    require('tailwindcss-dark-mode')()
+  ],
 }
