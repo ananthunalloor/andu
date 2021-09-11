@@ -18,10 +18,7 @@
       </div>
     </div>
     <div class="landing_arrow">
-      <span
-        class="tracking-tighter"
-        >⮛</span
-      >
+      <i class="fas fa-chevron-down"></i>
     </div>
   </section>
 </template>

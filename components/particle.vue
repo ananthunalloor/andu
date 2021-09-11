@@ -129,7 +129,7 @@ export default {
             },
           },
         },
-        retina_detect: false,
+        retina_detect: true,
       })
     },
   },
