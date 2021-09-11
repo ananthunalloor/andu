@@ -1,5 +1,5 @@
 module.exports = {
-  mode: 'jit',
+ // mode: 'jit',
   purge: {
     enabled: true,
     content: [
@@ -9,7 +9,7 @@ module.exports = {
       './nuxt.config.{js,ts}',
     ], 
   },
-  darkMode: 'class', // or 'media' or 'class'
+  darkMode: 'media', // or 'media' or 'class'
   theme: {
     darkSelector: '.dark-mode',
     extend: {
