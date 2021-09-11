@@ -1,6 +1,8 @@
 <template>
   <section class="landing comforta">
+     <client-only>
     <Particle/>
+    </client-only>
     <div class="landing_container">
       <div class="landing_content">
         <div>
