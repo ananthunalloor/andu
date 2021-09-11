@@ -31,6 +31,11 @@
     width: 27rem;
 }
 .navbar_a{
-    @apply hover:text-blue-400 px-1;
+    @apply px-1;
+}
+.navbar_a:hover{
+    background: linear-gradient(90deg, hsla(29, 92%, 70%, 1) 0%, hsla(0, 87%, 73%, 1) 100%);
+    -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 </style>

@@ -1,14 +1,12 @@
 <template>
   <section class="landing comforta">
-    <div id="stars"></div>
-    <div id="stars2"></div>
-    <div id="stars3"></div>
     <div class="landing_container">
       <div class="landing_content">
         <div>
           <h1>
             <span class="landing_hi nunito">HI.</span>
-            <span class="landing_name"> I'm ananthu</span>
+            <span class="landing_iam">I'm </span>
+            <span class="landing_name">ananthu</span>
           </h1>
         </div>
         <div>
@@ -19,12 +17,6 @@
     <div class="landing_arrow">
       <span
         class="tracking-tighter"
-        v-anime="{
-          translateY: [0, 10, 0],
-          easing: 'easeInOutSine',
-          duration: 3000,
-          loop: true,
-        }"
         >⮛</span
       >
     </div>
@@ -33,6 +25,8 @@
 <style lang="postcss" scoped>
 .landing {
   @apply w-full flex flex-col;
+  background-color: #FCFCFC;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='332' height='332' viewBox='0 0 200 200'%3E%3Cdefs%3E%3ClinearGradient id='a' gradientUnits='userSpaceOnUse' x1='100' y1='33' x2='100' y2='-3'%3E%3Cstop offset='0' stop-color='%23000' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%23000' stop-opacity='1'/%3E%3C/linearGradient%3E%3ClinearGradient id='b' gradientUnits='userSpaceOnUse' x1='100' y1='135' x2='100' y2='97'%3E%3Cstop offset='0' stop-color='%23000' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%23000' stop-opacity='1'/%3E%3C/linearGradient%3E%3C/defs%3E%3Cg fill='%23d2d2d2' fill-opacity='0.17'%3E%3Crect x='100' width='100' height='100'/%3E%3Crect y='100' width='100' height='100'/%3E%3C/g%3E%3Cg fill-opacity='0.17'%3E%3Cpolygon fill='url(%23a)' points='100 30 0 0 200 0'/%3E%3Cpolygon fill='url(%23b)' points='100 100 0 130 0 100 200 100 200 130'/%3E%3C/g%3E%3C/svg%3E");
 }
 .landing_container {
   @apply w-full flex items-center justify-around flex-col;
@@ -41,8 +35,26 @@
 .landing_hi {
   @apply text-7xl;
 }
+.landing_iam{
+  @apply text-6xl;
+}
 .landing_name {
   @apply text-6xl;
+  background: linear-gradient(90deg, hsla(29, 92%, 70%, 1) 0%, hsla(0, 87%, 73%, 1) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+      -webkit-transition: font-size 1s;
+       -moz-transition: font-size 1s;
+         -o-transition: font-size 1s;
+            transition: font-size 1s;
+              -webkit-transition-timing-function: ease-in-out;
+            -moz-transition-timing-function: ease-in-out;
+            -o-transition-timing-function: ease-in-out;
+            transition-timing-function: ease-in-out;
+}
+.landing_name:hover{
+  //background: blueviolet;
+  font-size: 4.5rem;
 }
 .landing_caption {
   @apply text-3xl sm:float-right;
@@ -51,69 +63,6 @@
   @apply pl-8 sm:pl-0;
 }
 .landing_arrow {
-  @apply text-4xl flex flex-col p-5 leading-4 text-center;
-}
-
-@keyframes animStar {
-  from {
-    transform: translateY(0px);
-  }
-  to {
-    transform: translateY(-2000px);
-  }
-}
-
-#stars {
-    z-index: 0;
-  width: 1px;
-  height: 1px;
-  background: transparent;
-  box-shadow: 1066px 1561px #1f2329;
-  animation: animStar 50s linear infinite;
-}
-#stars:after {
-  content: ' ';
-  position: absolute;
-  top: 200px;
-  width: 1px;
-  height: 1px;
-  background: transparent;
-  box-shadow: 1066px 1561px #1f2329;
-}
-
-#stars2 {
-    z-index: 0;
-  width: 2px;
-  height: 2px;
-  background: transparent;
-  box-shadow: 775px 567px #1f2329;
-  animation: animStar 100s linear infinite;
-}
-#stars2:after {
-  content: ' ';
-  position: absolute;
-  top: 200px;
-  width: 2px;
-  height: 2px;
-  background: transparent;
-  box-shadow: 775px 567px #1f2329;
-}
-
-#stars3 {
-    z-index: 0;
-  width: 3px;
-  height: 3px;
-  background: transparent;
-  box-shadow: 1529px 1634px #1f2329;
-  animation: animStar 150s linear infinite;
-}
-#stars3:after {
-  content: ' ';
-  position: absolute;
-  top: 200px;
-  width: 3px;
-  height: 3px;
-  background: transparent;
-  box-shadow: 1529px 1634px #1f2329;
+  @apply text-4xl flex flex-col p-5 leading-4 text-center animate-bounce;
 }
 </style>
