@@ -23,7 +23,7 @@ export default {
     methods:{
         toggle() {
       this.$colorMode.preference =
-        this.$colorMode.value == "light" ? "dark" : "light";
+        this.$colorMode.value == "dark" ? "light" : "dark";
     }
     }
 }
@@ -31,7 +31,7 @@ export default {
 
 <style lang="postcss" scoped>
 .navbar{
-    @apply w-full h-20 sticky top-0 z-50 bg-off-white shadow-md text-off-gray dark:text-off-white dark:bg-off-gray;
+    @apply w-full h-20 sticky top-0 z-50 bg-white shadow-md text-off-gray dark:text-off-white dark:bg-off-gray;
     //box-shadow: 0px 2px 4px 2px rgba(100,100,100,0.5);
 }
 .navbar_nav{
