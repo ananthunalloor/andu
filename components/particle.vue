@@ -3,7 +3,8 @@
 </template>
 <style lang="postcss" scoped>
 .particles-js{
-    @apply w-full h-full absolute bg-transparent z-0;
+    @apply w-full absolute bg-transparent z-0;
+    height: 80vh;
 }
 </style>
 <script>
@@ -14,7 +15,6 @@ export default {
     }
   },
   mounted() {
-    //require('particles.js')
     this.$nextTick(() => {
       this.initParticleJS()
     })
