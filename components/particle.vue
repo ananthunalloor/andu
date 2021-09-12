@@ -12,6 +12,8 @@ export default {
   data() {
     return {
       id: 'particles-instance-' + Math.floor(Math.random() * 5000),
+      darlColor: '787A91',
+      lightColor: '#fc9c47',
     }
   },
   mounted() {
