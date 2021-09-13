@@ -41,13 +41,13 @@ export default {
   //box-shadow: 0px 2px 4px 2px rgba(100,100,100,0.5);
 }
 .navbar_nav {
-  @apply h-full flex items-center sm:px-20 px-7;
+  @apply h-full flex items-center px-7 md:px-20;
 }
 .navbar_logo {
   @apply text-4xl;
 }
 .navbar_link {
-  @apply hidden md:flex ml-auto justify-between text-lg;
+  @apply hidden sm:flex ml-auto justify-between text-lg;
   width: 27rem;
 }
 .navbar_a {
