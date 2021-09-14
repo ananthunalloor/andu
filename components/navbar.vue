@@ -7,7 +7,7 @@
       <div class="navbar_link">
         <a class="navbar_a" href="#">home</a>
         <a class="navbar_a" href="#about">about</a>
-        <a class="navbar_a" href="#">skills</a>
+        <a class="navbar_a" href="#skill">skills</a>
         <a class="navbar_a" href="#">projects</a>
         <a class="navbar_a" href="#">contact</a>
       </div>

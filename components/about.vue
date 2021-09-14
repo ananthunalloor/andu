@@ -54,9 +54,9 @@ export default {}
   @apply p-6 flex text-sm;
 }
 .about-button-resume{
-  @apply my-2 mx-3 p-2 pb-0 bg-green-500 text-off-gray rounded-md transition duration-500 ease-out transform hover:-translate-y-1 hover:scale-110;
+  @apply my-2 mx-3 p-2 pb-0 bg-green-500 text-off-gray shadow-2xl rounded-md transition duration-500 ease-out transform hover:-translate-y-1 hover:scale-110;
 }
 .about-button-contact{
-  @apply m-2 p-2 pb-1 border-2 border-green-500 text-green-500 rounded-md transition duration-500 ease-out transform hover:-translate-y-1 hover:scale-110;
+  @apply m-2 p-2 pb-1 border-2 border-green-500 text-green-500 shadow-inner rounded-md transition duration-500 ease-out transform hover:-translate-y-1 hover:scale-110;
 }
 </style>

@@ -1,7 +1,8 @@
 <template>
 <main>
 <Landing/>
-<LazyAbout/>
-<LazyContact/>
+<About/>
+<Skill/>
+<Contact/>
 </main>
 </template>
