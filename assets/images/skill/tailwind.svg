@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="48px" height="30px" viewBox="0 0 48 30" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <path d="M0 0L48 0L48 29.3333L0 29.3333L0 0Z" id="path_1" />
+    <path d="M0 0L48 0L48 28.8L0 28.8L0 0Z" id="path_2" />
+    <clipPath id="mask_1">
+      <use xlink:href="#path_1" />
+    </clipPath>
+    <clipPath id="mask_2">
+      <use xlink:href="#path_2" />
+    </clipPath>
+  </defs>
+  <g id="tailwind">
+    <path d="M0 0L48 0L48 29.3333L0 29.3333L0 0Z" id="Background" fill="none" fill-rule="evenodd" stroke="none" />
+    <g clip-path="url(#mask_1)">
+      <g id="Mask-group">
+        <path d="M0 0L48 0L48 28.8L0 28.8L0 0Z" id="Shape" fill="none" fill-rule="evenodd" stroke="none" />
+        <g clip-path="url(#mask_2)">
+          <g id="Group">
+            <path d="M24 0C17.6 0 13.6 3.2 12 9.6C14.4 6.4 17.2 5.2 20.4 6C22.2258 6.456 23.5307 7.78133 24.9751 9.24711C27.328 11.6356 30.0516 14.4 36 14.4C42.4 14.4 46.4 11.2 48 4.8C45.6 8 42.8 9.2 39.6 8.4C37.7742 7.944 36.4693 6.61867 35.0249 5.15289C32.672 2.76444 29.9484 0 24 0L24 0ZM12 14.4C5.6 14.4 1.6 17.6 0 24C2.4 20.8 5.2 19.6 8.4 20.4C10.2258 20.8569 11.5307 22.1814 12.9751 23.6471C15.328 26.0356 18.0516 28.8 24 28.8C30.4 28.8 34.4 25.6 36 19.2C33.6 22.4 30.8 23.6 27.6 22.8C25.7742 22.344 24.4693 21.0187 23.0249 19.5529C20.672 17.1645 17.9484 14.4 12 14.4L12 14.4Z" id="Shape" fill="#06B6D4" fill-rule="evenodd" stroke="none" />
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

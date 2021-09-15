@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="48px" height="48px" viewBox="0 0 48 48" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <path d="M0 0L48 0L48 48L0 48L0 0Z" id="path_1" />
+    <clipPath id="mask_1">
+      <use xlink:href="#path_1" />
+    </clipPath>
+  </defs>
+  <g id="Javascript-icon">
+    <path d="M0 0L48 0L48 48L0 48L0 0Z" id="Background" fill="none" fill-rule="evenodd" stroke="none" />
+    <g clip-path="url(#mask_1)">
+      <path d="M0 36L0 0L36 0L36 36L0 36L0 36Z" transform="translate(6 6)" id="Shape" fill="#FFD600" fill-rule="evenodd" stroke="none" />
+      <path d="M14.205 10.947C14.897 12.071 15.649 13.148 17.242 13.148C18.58 13.148 19.282 12.483 19.282 11.563C19.282 10.462 18.556 10.071 17.084 9.43L16.277 9.086C13.948 8.098 12.399 6.86 12.399 4.245C12.399 1.835 14.244 0.00100136 17.127 0.00100136C19.18 0.00100136 20.655 0.712002 21.719 2.574L19.205 4.181C18.652 3.193 18.054 2.804 17.127 2.804C16.181 2.804 15.582 3.401 15.582 4.181C15.582 5.145 16.182 5.535 17.567 6.132L18.374 6.476C21.119 7.645 22.667 8.839 22.667 11.523C22.667 14.415 20.383 16 17.317 16C14.318 16 12.615 14.495 11.667 12.632L14.205 10.947L14.205 10.947ZM2.619 11.029C3.125 11.935 3.894 12.632 5 12.632C6.058 12.632 6.667 12.214 6.667 10.589L6.667 0L10 0L10 11.101C10 14.468 8.047 16 5.195 16C2.618 16 0.757999 14.254 0 12.632L2.619 11.029L2.619 11.029Z" transform="translate(15.333008 22)" id="Shape" fill="#000001" fill-rule="evenodd" stroke="none" />
+    </g>
+  </g>
+</svg>

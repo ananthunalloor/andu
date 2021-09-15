@@ -8,67 +8,146 @@
         <div class="skill-frontend">
           <div class="frontend skill-text-header"><h1>frontend</h1></div>
           <div class="skill-holder">
-            <div class="skill-card">
-              <div class="skill-card-logo"></div>
+            <div class="skill-card" v-for="skill in frontend" :key="skill.name">
+              <div class="skill-card-logo" :style="{'background-image': 'url('+skill.url+')' }"></div>
               <div class="skill-card-text">
-                <h1 class="pl-5 pt-3">vue.js</h1>
+                <h1 class="pl-5 pt-3">{{skill.name}}</h1>
               </div>
             </div>
-            <div class="skill-card">
-              <div class="skill-card-logo"></div>
-              <div class="skill-card-text">
-                <h1 class="pl-5 pt-3">vue.js</h1>
-              </div>
-            </div>
-            <div class="skill-card"></div>
-            <div class="skill-card"></div>
-            <div class="skill-card"></div>
           </div>
         </div>
         <div class="skill-backend">
           <div class="backend skill-text-header"><h1>backend</h1></div>
           <div class="skill-holder">
-            <div class="skill-card">
-              <div class="skill-card-logo"></div>
+            <div class="skill-card" v-for="skill in backend" :key="skill.name">
+              <div class="skill-card-logo" :style="{'background-image': 'url('+skill.url+')' }"></div>
               <div class="skill-card-text">
-                <h1 class="pl-5 pt-3">vue.js</h1>
+                <h1 class="pl-5 pt-3">{{skill.name}}</h1>
               </div>
             </div>
-            <div class="skill-card">
-              <div class="skill-card-logo"></div>
-              <div class="skill-card-text">
-                <h1 class="pl-5 pt-3">vue.js</h1>
-              </div>
-            </div>
-            <div class="skill-card"></div>
-            <div class="skill-card"></div>
-            <div class="skill-card"></div>
           </div>
         </div>
         <div class="skill-tool">
           <div class="tools skill-text-header"><h1>tool</h1></div>
-        </div>
         <div class="skill-holder">
-          <div class="skill-card">
-            <div class="skill-card-logo"></div>
+          <div class="skill-card" v-for="skill in tool" :key="skill.name">
+            <div class="skill-card-logo" :style="{'background-image': 'url('+skill.url+')' }"></div>
             <div class="skill-card-text">
-              <h1 class="pl-5 pt-3">vue.js</h1>
+              <h1 class="pl-5 pt-3">{{skill.name}}</h1>
             </div>
           </div>
-          <div class="skill-card">
-            <div class="skill-card-logo"></div>
-            <div class="skill-card-text">
-              <h1 class="pl-5 pt-3">vue.js</h1>
+        </div>
+        </div>
+        <div class="skill-exposure">
+          <div class="exposure skill-text-header"><h1>exposure</h1></div>
+          <div class="skill-holder">
+            <div class="skill-card" v-for="skill in exposure" :key="skill.name">
+              <div class="skill-card-logo" :style="{'background-image': 'url('+skill.url+')' }"></div>
+              <div class="skill-card-text">
+                <h1 class="pl-5 pt-3">{{skill.name}}</h1>
+              </div>
             </div>
           </div>
-          <div class="skill-card"></div>
-          <div class="skill-card"></div>
-          <div class="skill-card"></div>
         </div>
       </div>
     </div>
   </section>
 </template>
+<script>
+export default {
+  data(){
+    return{
+
+      image: require('assets/images/skill/vue.svg'),
+
+      frontend:[
+        {
+          name: 'html',
+          url:require('assets/images/skill/html.svg')
+        },
+        {
+          name: 'css',
+          url:require('assets/images/skill/css.svg')
+        },
+        {
+          name: 'js',
+          url:require('assets/images/skill/js.svg')
+        },
+        {
+          name: 'sass',
+          url:require('assets/images/skill/sass.svg')
+        },
+        {
+          name: 'tailwind',
+          url:require('assets/images/skill/tailwind.svg')
+        },
+        {
+          name: 'bootstrap',
+          url:require('assets/images/skill/bootstrap.svg')
+        },
+        {
+          name: 'vue.js',
+          url:require('assets/images/skill/vue.svg')
+        },
+        {
+          name:'nuxt',
+          url:require('assets/images/skill/nuxt.svg')
+        },
+        {
+          name: 'react',
+          url:require('assets/images/skill/react.svg')
+        },
+      ],
+      backend:[
+        {
+          name:'firebase',
+          url: require('assets/images/skill/firebase.svg')
+        },
+        {
+          name:'nodejs',
+          url: require('assets/images/skill/node.svg')
+        },
+        {
+          name:'django',
+          url: require('assets/images/skill/django.svg')
+        },
+      ],
+      tool:[
+        {
+          name:'git',
+          url:require('assets/images/skill/git.svg')
+        },
+        {
+          name:'photoshop',
+          url:require('assets/images/skill/photoshop.svg')
+        },
+        {
+          name:'figma',
+          url:require('assets/images/skill/figma.svg')
+        },
+        {
+          name:'lunacy',
+          url:require('assets/images/skill/lunacy.svg')
+        },
+      ],
+      exposure:[
+        {
+          name:'postcss',
+          url:require('assets/images/skill/postcss.svg')
+        },
+        {
+          name:'adobe xd',
+          url:require('assets/images/skill/adobexd.svg')
+        },
+        {
+          name:'illustrator',
+          url:require('assets/images/skill/adobeai.svg')
+        },
+      ]
+    }
+  }
+}
+</script>
 <style lang="postcss" scoped>
 .skill {
   @apply w-full min-h-screen dark:bg-off-gray dark:text-off-white;
@@ -100,7 +179,7 @@
 }
 .skill-card-logo {
   @apply w-12 h-12 my-auto transition shadow-inner rounded-xl duration-150 ease-in-out transform hover:-translate-y-1 hover:scale-105;
-  background-image: url('~assets/images/skill/vue.svg');
+  //background-image: url('~assets/images/skill/vue.svg');
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="48px" height="48px" viewBox="0 0 48 48" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <path d="M0 0L48 0L48 48L0 48L0 0Z" id="path_1" />
+    <clipPath id="mask_1">
+      <use xlink:href="#path_1" />
+    </clipPath>
+  </defs>
+  <g id="Css3-icon">
+    <path d="M0 0L48 0L48 48L0 48L0 0Z" id="Background" fill="none" fill-rule="evenodd" stroke="none" />
+    <g clip-path="url(#mask_1)">
+      <path d="M34 0L0 0L3 34L17 38L31 34L34 0L34 0L34 0Z" transform="translate(7 5)" id="Shape" fill="#0277BD" fill-rule="evenodd" stroke="none" />
+      <path d="M0 0L0 31.9L11.2 28.7L13.7 0L0 0Z" transform="translate(24 8)" id="Shape" fill="#039BE5" fill-rule="evenodd" stroke="none" />
+      <path d="M9.1 0L0 0L0 4L4.9 4L4.6 8L0 8L0 12L4.4 12L4.1 16.5L0 17.9L0 22.1L7.9 19.5L8.6 8L8.6 8L9.1 0Z" transform="translate(24 13)" id="Shape" fill="#FFFFFF" fill-rule="evenodd" stroke="none" />
+      <path d="M9.2 0L9.2 4L0.3 4L0 0L9.2 0L9.2 0ZM4.6 8L4.8 12L9.2 12L9.2 8L4.6 8L4.6 8ZM5 14L0.999999 14L1.3 19.5L9.2 22.1L9.2 17.9L5.1 16.5L5 14L5 14Z" transform="translate(14.799988 13)" id="Shape" fill="#EEEEEE" fill-rule="evenodd" stroke="none" />
+    </g>
+  </g>
+</svg>

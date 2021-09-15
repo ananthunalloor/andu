@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="48px" height="48px" viewBox="0 0 48 48" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <path d="M0 0L48 0L48 48L0 48L0 0Z" id="path_1" />
+    <clipPath id="mask_1">
+      <use xlink:href="#path_1" />
+    </clipPath>
+  </defs>
+  <g id="Firebase-icon">
+    <path d="M0 0L48 0L48 48L0 48L0 0Z" id="Background" fill="none" fill-rule="evenodd" stroke="none" />
+    <g clip-path="url(#mask_1)">
+      <path d="M0 29.0089L15.234 0.444949C15.555 -0.157051 16.423 -0.146051 16.728 0.46495L22 11.0089L0 29.0089L0 29.0089Z" transform="translate(8 7.9910583)" id="Shape" fill="#FF8F00" fill-rule="evenodd" stroke="none" />
+      <path d="M0 34.9912L5.546 0.792183C5.691 -0.102817 6.893 -0.296817 7.313 0.507183L18 20.9912L0 34.9912L0 34.9912Z" transform="translate(8 2.000824)" id="Shape" fill="#FFA000" fill-rule="evenodd" stroke="none" />
+      <path d="M0 23.974L0.2 23.817L17.729 9.476L12.785 0L0 23.974Z" transform="translate(8.007996 13.011993)" id="Shape" fill="#FF6F00" fill-rule="evenodd" stroke="none" />
+      <path d="M0 25.9816L26.666 0.26858C27.225 -0.270419 28.158 0.0475807 28.272 0.81558L32 25.9816L17 34.7246C16.391 35.0666 15.648 35.0666 15.039 34.7246L0 25.9816L0 25.9816Z" transform="translate(8 11.018433)" id="Shape" fill="#FFC400" fill-rule="evenodd" stroke="none" />
+    </g>
+  </g>
+</svg>

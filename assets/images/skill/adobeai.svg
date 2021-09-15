@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="48px" height="48px" viewBox="0 0 48 48" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <path d="M0 0L48 0L48 48L0 48L0 0Z" id="path_1" />
+    <clipPath id="mask_1">
+      <use xlink:href="#path_1" />
+    </clipPath>
+  </defs>
+  <g id="Adobe-Illustrator-icon">
+    <path d="M0 0L48 0L48 48L0 48L0 0Z" id="Background" fill="none" fill-rule="evenodd" stroke="none" />
+    <g clip-path="url(#mask_1)">
+      <path d="M0 4C0 1.791 1.791 0 4 0L32 0C34.209 0 36 1.791 36 4L36 32C36 34.209 34.209 36 32 36L4 36C1.791 36 0 34.209 0 32L0 4L0 4Z" transform="translate(6 6)" id="Shape" fill="#FF5722" fill-rule="evenodd" stroke="none" />
+      <path d="M0 0L0 30L30 30L30 0L0 0L0 0ZM14.691 22L13.929 19.09L10.013 19.09L9.252 22L6.215 22L10.658 7.781L13.285 7.781L17.758 22L14.691 22L14.691 22ZM21.85 22L19.077 22L19.077 11.434L21.85 11.434L21.85 22L21.85 22ZM21.552 9.754C21.281 10.034 20.916 10.174 20.453 10.174C19.99 10.174 19.625 10.034 19.354 9.754C19.083 9.474 18.949 9.122 18.949 8.699C18.949 8.269 19.086 7.918 19.359 7.644C19.632 7.37 19.998 7.234 20.453 7.234C20.908 7.234 21.273 7.371 21.547 7.644C21.821 7.917 21.957 8.269 21.957 8.699C21.957 9.122 21.822 9.474 21.552 9.754L21.552 9.754Z" transform="translate(9 9)" id="Shape" fill="#1C0802" fill-rule="evenodd" stroke="none" />
+      <path d="M0 5.068L2.656 5.068L1.328 0L0 5.068Z" transform="translate(19.638977 20.629028)" id="Shape" fill="#1C0802" fill-rule="evenodd" stroke="none" />
+    </g>
+  </g>
+</svg>
