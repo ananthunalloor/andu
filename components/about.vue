@@ -48,7 +48,7 @@ export default {}
   @apply flex flex-col sm:float-right w-11/12 md:w-8/12 text-off-gray dark:text-white;
 }
 .about-text {
-  @apply p-1 pl-5 sm:ml-3 sm:p-6 sm:pr-14 text-lg border-l-2 border-opacity-50 border-green-500;
+  @apply p-1 pl-5 sm:ml-3 sm:p-6 pr-5 rounded-r-md text-lg border-l-2 border-opacity-50 border-green-500 shadow-inner bg-off-white-2 dark:bg-off-gray-4;
 }
 .about-action{
   @apply p-6 flex text-sm;

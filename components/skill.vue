@@ -27,7 +27,7 @@
         </div>
         <div class="skill-backend">
           <div class="backend skill-text-header"><h1>backend</h1></div>
-                    <div class="skill-holder">
+          <div class="skill-holder">
             <div class="skill-card">
               <div class="skill-card-logo"></div>
               <div class="skill-card-text">
@@ -46,24 +46,25 @@
           </div>
         </div>
         <div class="skill-tool">
-          <div class="tools skill-text-header"><h1>tool</h1></div></div>
-                    <div class="skill-holder">
-            <div class="skill-card">
-              <div class="skill-card-logo"></div>
-              <div class="skill-card-text">
-                <h1 class="pl-5 pt-3">vue.js</h1>
-              </div>
+          <div class="tools skill-text-header"><h1>tool</h1></div>
+        </div>
+        <div class="skill-holder">
+          <div class="skill-card">
+            <div class="skill-card-logo"></div>
+            <div class="skill-card-text">
+              <h1 class="pl-5 pt-3">vue.js</h1>
             </div>
-            <div class="skill-card">
-              <div class="skill-card-logo"></div>
-              <div class="skill-card-text">
-                <h1 class="pl-5 pt-3">vue.js</h1>
-              </div>
-            </div>
-            <div class="skill-card"></div>
-            <div class="skill-card"></div>
-            <div class="skill-card"></div>
           </div>
+          <div class="skill-card">
+            <div class="skill-card-logo"></div>
+            <div class="skill-card-text">
+              <h1 class="pl-5 pt-3">vue.js</h1>
+            </div>
+          </div>
+          <div class="skill-card"></div>
+          <div class="skill-card"></div>
+          <div class="skill-card"></div>
+        </div>
       </div>
     </div>
   </section>
@@ -87,25 +88,24 @@
   @apply p-2 sm:p-5 m-2 sm:ml-5 md:ml-28;
 }
 .skill-text-header {
-  @apply text-2xl md:text-3xl sm:text-2xl px-3 py-1 border-l-2;
+  @apply text-3xl md:text-3xl sm:text-2xl px-3 py-1 border-l-2 text-off-gray dark:text-off-white;
   border-color: #6cb3fa;
-  color: #6cb3fa;
 }
 .skill-holder {
   @apply w-full flex flex-wrap pb-5 md:pl-5 my-5;
 }
 .skill-card {
-  @apply w-16 sm:w-60 h-16 rounded-lg shadow-lg border bg-off-white dark:bg-off-gray m-4 px-2 flex transition duration-150 ease-in-out transform hover:-translate-y-1 hover:scale-105;
+  @apply w-14 sm:w-auto h-14 rounded-lg shadow-lg bg-off-white-2 dark:bg-off-gray-4 m-4 px-2 flex transition duration-150 ease-in-out transform hover:-translate-y-1 hover:scale-105;
   border-color: #6cb3fa;
 }
 .skill-card-logo {
-  @apply w-14 h-14 sm:w-12 sm:h-12 my-auto transition shadow-inner rounded-xl duration-150 ease-in-out transform hover:-translate-y-1 hover:scale-105;
+  @apply w-12 h-12 my-auto transition shadow-inner rounded-xl duration-150 ease-in-out transform hover:-translate-y-1 hover:scale-105;
   background-image: url('~assets/images/skill/vue.svg');
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
 }
 .skill-card-text {
-  @apply hidden sm:block h-14 flex-auto my-auto text-xl;
+  @apply hidden sm:block mr-2 h-12 flex-auto my-auto text-xl;
 }
 </style>

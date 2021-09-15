@@ -16,6 +16,10 @@ module.exports = {
       colors:{
         'off-gray': '#222831',
         'off-white': '#FCFCFC',
+        'off-gray-2': '#30475E',
+        'off-gray-3': '#303841',
+        'off-gray-4': '#3A4750',
+        'off-white-2': '#fffcfc',
       }
     },
   },
