@@ -3,6 +3,7 @@
 <Landing/>
 <About/>
 <Skill/>
+<Project/>
 <Contact/>
 </main>
 </template>

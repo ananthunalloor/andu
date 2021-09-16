@@ -8,8 +8,8 @@
         <a class="navbar_a" href="#">home</a>
         <a class="navbar_a" href="#about">about</a>
         <a class="navbar_a" href="#skill">skills</a>
-        <a class="navbar_a" href="#">projects</a>
-        <a class="navbar_a" href="#">contact</a>
+        <a class="navbar_a" href="#project">projects</a>
+        <a class="navbar_a" href="#contact">contact</a>
       </div>
       <div class="navbar_theme" @click="toggle(); toggleActive = !toggleActive">
         <input class="navbar_toggle" type="checkbox">
@@ -41,7 +41,7 @@ export default {
   //box-shadow: 0px 2px 4px 2px rgba(100,100,100,0.5);
 }
 .navbar_nav {
-  @apply h-full flex items-center px-7 md:px-20;
+  @apply h-full flex items-center px-7 md:px-20 xl:max-w-7xl xl:mx-auto; 
 }
 .navbar_logo {
   @apply text-4xl;

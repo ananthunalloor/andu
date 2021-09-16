@@ -153,7 +153,7 @@ export default {
   @apply w-full min-h-screen dark:bg-off-gray dark:text-off-white;
 }
 .skill-container {
-  @apply pt-12 md:pt-20 sm:pt-14 p-5;
+  @apply pt-12 md:pt-20 sm:pt-14 p-5 max-w-screen-xl lg:mx-auto;
 }
 .skill-header {
   @apply text-7xl sm:text-8xl md:text-9xl pl-5 py-5 sm:py-7 sm:px-14;

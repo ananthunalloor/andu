@@ -34,7 +34,7 @@ export default {}
   background-size: cover;
 }
 .about-container {
-  @apply pt-12 md:pt-20 sm:pt-14 p-5;
+  @apply pt-12 md:pt-20 sm:pt-14 p-5 max-w-screen-xl lg:mx-auto;
 }
 .about-header {
   @apply text-7xl sm:text-8xl md:text-9xl pr-5 py-5 sm:py-7 sm:px-14;
