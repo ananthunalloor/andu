@@ -5,18 +5,35 @@
         <h1>contact</h1>
       </div>
       <div class="contact-content">
-        <form class="w-auto">
-          <div class="form-container">
+        <div class="form-container">
+          <form class="w-auto">
             <div class="form-small">
               <label for="default" class="form-label">firstname</label>
               <input type="text" placeholder="john" class="form-input" />
             </div>
             <div class="form-small">
-              <label for="default" class="form-label">firstname</label>
-              <input type="text" placeholder="john" class="form-input" />
+              <label for="default" class="form-label">lastname</label>
+              <input type="text" placeholder="doe" class="form-input" />
             </div>
-          </div>
-        </form>
+            <div class="form-large">
+              <label for="default" class="form-label">email</label>
+              <input
+                type="text"
+                placeholder="examplemail@email.com"
+                class="form-input"
+              />
+            </div>
+            <div class="form-large">
+              <label for="default" class="form-label">message</label>
+              <textarea
+                type="text"
+                placeholder="write your message here."
+                class="form-input"
+              />
+            </div>
+            <button class="px-2 py-1 mx-6 my-5 bg-green-500 text-off-gray shadow-2xl rounded-md">send</button>
+          </form>
+        </div>
       </div>
     </div>
   </section>
@@ -33,7 +50,7 @@
   @apply flex flex-col sm:flex-row pt-12 md:pt-20 sm:pt-14 p-5 max-w-screen-xl lg:mx-auto;
 }
 .contact-header {
-  @apply text-7xl sm:text-8xl md:text-9xl pl-5 py-5 sm:py-7 sm:pl-14 sm:pr-5;
+  @apply text-7xl sm:text-8xl md:text-9xl pl-5 md:pl-8 sm:pl-14 py-5 sm:py-7 sm:pr-5;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-color: #6cb3fa;
@@ -46,13 +63,16 @@
   }
 }
 .contact-content {
-  @apply w-full h-full m-auto pl-10;
+  @apply w-full h-full m-auto sm:pl-10;
 }
 .form-container {
-  @apply flex flex-wrap w-4/5 h-5/6 text-off-gray dark:text-off-white m-auto;
+  @apply flex flex-wrap text-off-gray dark:text-off-white m-auto;
 }
 .form-small {
   @apply flex flex-col mt-5 ml-5;
+}
+.form-large {
+  @apply flex flex-col mt-3 ml-5;
 }
 .form-label {
   @apply select-none text-lg;
