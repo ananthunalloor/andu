@@ -58,15 +58,12 @@ export default {
   },
   methods:{
     async sendMessage(messageData){
-      console.log(messageData.email);
-     this.responce = this.$axios.$post('/functions/contact',
-{
-	params:{
-		firstname: messageData.firstname,
-    lastname: messageData.lastname,
+      console.log(messageData.firstName);
+     this.responce = this.$axios.$post('/functions/contact',{
+		firstname: messageData.firstName,
+    lastname: messageData.lastName,
     email: messageData.email,
     message: messageData.message
-	},
 })
 console.log(this.responce);
     },

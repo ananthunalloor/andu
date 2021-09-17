@@ -7,11 +7,13 @@ exports.handler = async function (event, context) {
             headers: { 'Allow': 'POST' }
         }
     }
-    const params = event.queryStringParameters
+    const params = JSON.parse(event.body)
+
     if (!params.email && !params.message) {
         console.log(params);
         return { statusCode: 422, body: 'All data are required.' }
     }
+
     return {
         statusCode: 200,
         body: 'message:Message Send.',

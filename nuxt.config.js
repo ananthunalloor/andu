@@ -1,8 +1,8 @@
 export default {
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
-  ssr: true,
-  //ssr: false,
+  //ssr: true,
+  ssr: false,
 
   loadingIndicator: {
     name: 'folding-cube',
@@ -71,7 +71,9 @@ export default {
   ],
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
-  //axios: {},
+  axios: {
+    baseURL: '/',
+  },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
