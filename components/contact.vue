@@ -91,7 +91,7 @@ console.log(this.responce);
 }
 @screen sm {
   .contact-header {
-    writing-mode: sideways-lr;
+    writing-mode: vertical-lr;
   }
 }
 .contact-content {
@@ -116,6 +116,6 @@ console.log(this.responce);
   @apply px-4 py-2 rounded-lg bg-off-white dark:bg-off-gray-4;
 }
 .form-button{
-  @apply px-2 py-1 mx-6 my-5 bg-green-500 text-off-gray shadow-2xl rounded-md;
+  @apply text-lg px-4 py-2 mx-7 my-6 bg-green-500 text-off-gray shadow-2xl rounded-md;
 }
 </style>
