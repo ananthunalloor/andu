@@ -6,8 +6,8 @@ export default {
 
   loadingIndicator: {
     name: 'folding-cube',
-    color: '#f9fafb',
-    background: '#111827',
+    color: '#FCFCFC',
+    background: '#222831',
   },
 
   // Global page headers: https://go.nuxtjs.dev/config-head
@@ -67,7 +67,7 @@ export default {
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
     // https://go.nuxtjs.dev/axios
-    //'@nuxtjs/axios',
+    '@nuxtjs/axios',
   ],
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios

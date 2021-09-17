@@ -30,12 +30,12 @@
               <label for="default" class="form-label">message</label>
               <textarea
               v-model="messageForm.message"
-                type="text"
+                type="text" rows="6"
                 placeholder="write your message here."
                 class="form-input"
               />
             </div>
-            <button type="submit" class="px-2 py-1 mx-6 my-5 bg-green-500 text-off-gray shadow-2xl rounded-md">send</button>
+            <button type="submit" class="form-button">send</button>
           </form>
         </div>
         <div></div>
@@ -47,6 +47,7 @@
 export default {
   data(){
     return{
+      responce: '',
       messageForm:{
         firstName: '',
         lastName:'',
@@ -56,8 +57,18 @@ export default {
     }
   },
   methods:{
-    sendMessage(messageData){
-      console.log(messageData);
+    async sendMessage(messageData){
+      console.log(messageData.email);
+     this.responce = this.$axios.$post('/functions/contact',
+{
+	params:{
+		firstname: messageData.firstname,
+    lastname: messageData.lastname,
+    email: messageData.email,
+    message: messageData.message
+	},
+})
+console.log(this.responce);
     },
   },
 }
@@ -106,5 +117,8 @@ export default {
 }
 .form-input {
   @apply px-4 py-2 rounded-lg bg-off-white dark:bg-off-gray-4;
+}
+.form-button{
+  @apply px-2 py-1 mx-6 my-5 bg-green-500 text-off-gray shadow-2xl rounded-md;
 }
 </style>
