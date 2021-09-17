@@ -6,38 +6,62 @@
       </div>
       <div class="contact-content">
         <div class="form-container">
-          <form class="w-auto">
+          <form :model="messageForm" v-on:submit.prevent="sendMessage(messageForm)">
+            <div class="form-small-container">
             <div class="form-small">
               <label for="default" class="form-label">firstname</label>
-              <input type="text" placeholder="john" class="form-input" />
+              <input v-model="messageForm.firstName" type="text" placeholder="john" class="form-input" required/>
             </div>
             <div class="form-small">
               <label for="default" class="form-label">lastname</label>
-              <input type="text" placeholder="doe" class="form-input" />
+              <input v-model="messageForm.lastName" type="text" placeholder="doe" class="form-input" required/>
+            </div>
             </div>
             <div class="form-large">
               <label for="default" class="form-label">email</label>
               <input
-                type="text"
+              v-model="messageForm.email"
+                type="email"
                 placeholder="examplemail@email.com"
-                class="form-input"
+                class="form-input" required
               />
             </div>
             <div class="form-large">
               <label for="default" class="form-label">message</label>
               <textarea
+              v-model="messageForm.message"
                 type="text"
                 placeholder="write your message here."
                 class="form-input"
               />
             </div>
-            <button class="px-2 py-1 mx-6 my-5 bg-green-500 text-off-gray shadow-2xl rounded-md">send</button>
+            <button type="submit" class="px-2 py-1 mx-6 my-5 bg-green-500 text-off-gray shadow-2xl rounded-md">send</button>
           </form>
         </div>
+        <div></div>
       </div>
     </div>
   </section>
 </template>
+<script>
+export default {
+  data(){
+    return{
+      messageForm:{
+        firstName: '',
+        lastName:'',
+        email: '',
+        message:'',
+      }
+    }
+  },
+  methods:{
+    sendMessage(messageData){
+      console.log(messageData);
+    },
+  },
+}
+</script>
 <style lang="postcss" scoped>
 .contact {
   @apply w-full min-h-screen dark:bg-off-gray dark:text-off-white;
@@ -66,13 +90,16 @@
   @apply w-full h-full m-auto sm:pl-10;
 }
 .form-container {
-  @apply flex flex-wrap text-off-gray dark:text-off-white m-auto;
+  @apply text-off-gray dark:text-off-white max-w-xl h-auto m-auto;
+}
+.form-small-container{
+  @apply sm:flex flex-wrap justify-between max-w-lg;
 }
 .form-small {
-  @apply flex flex-col mt-5 ml-5;
+  @apply flex flex-col mt-3;
 }
 .form-large {
-  @apply flex flex-col mt-3 ml-5;
+  @apply flex flex-col mt-3 max-w-lg;
 }
 .form-label {
   @apply select-none text-lg;
