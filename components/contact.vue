@@ -6,7 +6,7 @@
       </div>
       <div class="contact-content">
         <div class="form-container">
-          <form :model="messageForm" method="POST" v-on:submit.prevent="sendMessage(messageForm)" netlify>
+          <form :model="messageForm" method="POST" v-on:submit.prevent="sendMessage(messageForm)">
             <div class="form-small-container">
             <div class="form-small">
               <label for="default" class="form-label">firstname</label>
