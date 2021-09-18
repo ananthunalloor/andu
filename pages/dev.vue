@@ -4,7 +4,7 @@
         <Dots class=" absolute left-3/4 z-0 opacity-70"/>
         <div class="w-10 h-10 bg-gray-700" @click=" toggleActive = !toggleActive"></div>
         <div class="form-container">
-          <form method="POST" action="/" netlify>
+          <form method="POST" netlify>
             <div class="form-small-container">
             <div class="form-small">
               <label for="default" class="form-label">firstname</label>
@@ -19,7 +19,6 @@
               <label for="default" class="form-label">email</label>
               <input
               name="email"
-              v-model="messageForm.email"
                 type="email"
                 placeholder="examplemail@email.com"
                 class="form-input" required
@@ -55,5 +54,26 @@ export default {
 background-image: url('~assets/images/test.svg');
 background-attachment: fixed;
 background-size: cover;
+}
+form-container {
+  @apply text-off-gray dark:text-off-white max-w-xl h-auto m-auto;
+}
+.form-small-container{
+  @apply sm:flex flex-wrap justify-between max-w-lg;
+}
+.form-small {
+  @apply flex flex-col mt-3;
+}
+.form-large {
+  @apply flex flex-col mt-3 max-w-lg;
+}
+.form-label {
+  @apply select-none text-lg;
+}
+.form-input {
+  @apply px-4 py-2 shadow-inner rounded-lg bg-off-white dark:bg-off-gray-4;
+}
+.form-button{
+  @apply text-lg px-4 py-2 mx-7 my-6 bg-green-500 text-off-gray shadow-lg rounded-md;
 }
 </style>
