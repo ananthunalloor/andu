@@ -4,7 +4,7 @@
         <Dots class=" absolute left-3/4 z-0 opacity-70"/>
         <div class="w-10 h-10 bg-gray-700" @click=" toggleActive = !toggleActive"></div>
         <div class="form-container">
-          <form method="POST" netlify>
+          <form method="POST" data-netlify="true">
             <div class="form-small-container">
             <div class="form-small">
               <label for="default" class="form-label">firstname</label>
