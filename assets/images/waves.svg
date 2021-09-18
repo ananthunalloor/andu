@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 17.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve">
+	
+<g id="Layer_1_copy_2">
+	<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="-207.2916" y1="270.9562" x2="1991.9283" y2="270.9562">
+		<stop  offset="0" style="stop-color:#6cb3fa ;stop-opacity:0.9"/>
+		<stop  offset="1" style="stop-color:#fcfcfc;stop-opacity:0"/>
+	</linearGradient>
+	<path fill="url(#SVGID_1_)" d="M-206.084,515.811c0,0,217.208-66.007,453.867,3c0.017,0.005,0.034,0.01,0.051,0.015
+		c118.716,34.611,243.627,53.152,366.838,35.887c136.417-19.115,258.875-65.218,397.701-35.334
+		c107.947,23.237,196.916,83.712,311.488,53.499c122.896-32.409,228.996-83.684,359.183-76.458
+		c111.262,6.176,199.042,51.051,308.884,10.389V-39.245h-2199.22L-206.084,515.811z">
+		<animateTransform attributeName="transform"
+                          attributeType="XML"
+                          type="translate"
+                          dur="25"
+                          values="150,0;-150,0;150,0;"
+                          repeatCount="indefinite"/>
+	</path>
+</g>
+</svg>

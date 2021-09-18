@@ -11,8 +11,8 @@
         <a class="navbar_a" href="#project">projects</a>
         <a class="navbar_a" href="#contact">contact</a>
       </div>
-      <div class="navbar_theme" @click="toggle(); toggleActive = !toggleActive">
-        <input class="navbar_toggle" type="checkbox">
+      <div class="navbar_theme" @click="toggle()">
+        <input name="theme" class="navbar_toggle" type="checkbox">
       </div>
     </nav>
   </header>
@@ -22,16 +22,21 @@
 export default {
   data() {
     return {
-      toggleActive: true,
+      toggleActive: false,
     }
   },
   methods: {
     toggle() {
-      this.$colorMode.preference =
-      this.$colorMode.value == 'dark' ? 'light' : 'dark'
-      console.log(this.toggleActive)
+      this.toggleActive = !this.toggleActive
+      if(!this.toggleActive){
+                  this.$colorMode.value = 'dark'
+              }else{
+                  this.$colorMode.value = 'light'
+              }
+              this.$colorMode.preference = this.$colorMode.value;
     },
   },
+
 }
 </script>
 
