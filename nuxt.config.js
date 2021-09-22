@@ -1,8 +1,8 @@
 export default {
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
-  //ssr: true,
-  ssr: false,
+  ssr: true,
+  //ssr: false,
 
   loadingIndicator: {
     name: 'folding-cube',
