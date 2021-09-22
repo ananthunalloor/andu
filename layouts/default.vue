@@ -2,6 +2,7 @@
 <section>
     <Navbar/>
     <Nuxt/>
+    <Footer/>
 </section>
 </template>
 <script>

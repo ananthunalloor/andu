@@ -126,6 +126,10 @@ export default {
           url:require('assets/images/skill/figma.svg')
         },
         {
+          name:'postman',
+          url:require('assets/images/skill/postman.svg')
+        },
+        {
           name:'lunacy',
           url:require('assets/images/skill/lunacy.svg')
         },
