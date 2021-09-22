@@ -93,7 +93,7 @@ export default {
   @apply max-w-lg p-4 flex-shrink flex-grow;
 }
 .project-details-header{
-  @apply md:text-5xl text-3xl pl-3 border-l-2 border-purple-600;
+  @apply md:text-5xl text-3xl px-3 border-l-2 border-purple-600 shadow-inner max-w-max;
 }
 .project-details-description{
 @apply text-xs pl-2 pt-4;
