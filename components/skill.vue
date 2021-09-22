@@ -57,9 +57,6 @@
 export default {
   data(){
     return{
-
-      image: require('assets/images/skill/vue.svg'),
-
       frontend:[
         {
           name: 'html',
