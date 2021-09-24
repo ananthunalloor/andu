@@ -62,7 +62,9 @@ export default {
     'nuxt-animejs',
     '@nuxtjs/color-mode'
   ],
-
+  generate: {
+    fallback: true
+},
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
     // https://go.nuxtjs.dev/axios
