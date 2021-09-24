@@ -9,6 +9,12 @@
 </style>
 <script>
 export default {
+  head(){
+        script: [
+      {src: 'https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js'},
+      {src: 'https://threejs.org/examples/js/libs/stats.min.js'},
+    ]
+  },
   data() {
     return {
       id: 'particles-instance-' + Math.floor(Math.random() * 5000),

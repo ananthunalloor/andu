@@ -1,15 +1,16 @@
 <template>
   <header class="comforta navbar">
     <nav class="navbar_nav">
-      <div>
+      <div><NuxtLink to="/">
         <h1 class="navbar_logo">andu.</h1>
+        </NuxtLink>
       </div>
       <div class="navbar_link">
-        <a class="navbar_a" href="#">home</a>
-        <a class="navbar_a" href="#about">about</a>
-        <a class="navbar_a" href="#skill">skills</a>
-        <a class="navbar_a" href="#project">projects</a>
-        <a class="navbar_a" href="#contact">contact</a>
+        <NuxtLink to="/#home" class="navbar_a">home</NuxtLink>
+        <NuxtLink to="/#about" class="navbar_a">about</NuxtLink>
+        <NuxtLink to="/#skill" class="navbar_a">skills</NuxtLink>
+        <NuxtLink to="/#project" class="navbar_a">projects</NuxtLink>
+        <NuxtLink to="/#contact" class="navbar_a">contact</NuxtLink>
       </div>
       <div class="navbar_theme" @click="toggle()">
         <input name="theme" class="navbar_toggle" type="checkbox">
@@ -20,6 +21,7 @@
 
 <script>
 export default {
+  //scroll : new SmoothScroll('.navbar_link a[href*="#"]'),
   data() {
     return {
       toggleActive: false,
