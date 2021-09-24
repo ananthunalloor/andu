@@ -118,6 +118,7 @@ export default {
   @apply text-sm border hover:text-off-gray border-off-gray-2 dark:border-off-white-2 px-3 py-2 m-2 rounded max-w-max transition duration-500 ease-out transform hover:translate-y-1 hover:scale-105;
 }
 .project-details-button:hover{
-  background-color: rgba(252, 213, 65, .8);
+ //background: linear-gradient(90deg, hsla(40, 94%, 74%, 1) 52%, hsla(60, 89%, 72%, 1) 100%);
+ background: linear-gradient(270deg, hsla(40, 94%, 74%, 1) 24%, hsla(60, 89%, 72%, 1) 100%);
 }
 </style>

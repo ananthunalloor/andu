@@ -15,6 +15,9 @@
       <div class="navbar_theme" @click="toggle()">
         <input name="theme" class="navbar_toggle" type="checkbox">
       </div>
+      <div class="nav-burger">
+        <i class="fas fa-bars fa-lg"></i>
+      </div>
     </nav>
   </header>
 </template>
@@ -44,7 +47,7 @@ export default {
 
 <style lang="postcss" scoped>
 .navbar {
-  @apply w-full h-20 sticky top-0 z-50 bg-white shadow-md text-off-gray dark:text-off-white dark:bg-off-gray;
+  @apply w-full h-20 sticky top-0 z-20 bg-white shadow-md text-off-gray dark:text-off-white dark:bg-off-gray;
   //box-shadow: 0px 2px 4px 2px rgba(100,100,100,0.5);
 }
 .navbar_nav {
@@ -93,5 +96,8 @@ export default {
 .navbar_toggle:checked::before{
     @apply bg-yellow-200;
     transform:translate(100%);
+}
+.nav-burger{
+  @apply sm:hidden p-3 ml-2;
 }
 </style>

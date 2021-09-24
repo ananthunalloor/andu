@@ -21,7 +21,7 @@
 </template>
 <style lang="postcss" scoped>
 .landing {
-  @apply w-full flex flex-col text-off-gray dark:text-off-white dark:bg-off-gray bg-light-background dark:bg-dark-background;
+  @apply w-full min-h-screen flex flex-col text-off-gray dark:text-off-white dark:bg-off-gray bg-light-background dark:bg-dark-background;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
