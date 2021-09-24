@@ -179,7 +179,7 @@ export default {
   @apply w-full flex flex-wrap pb-5 md:pl-5 my-5;
 }
 .skill-card {
-  @apply w-14 sm:w-auto h-14 rounded-lg shadow-lg bg-off-white-2 dark:bg-off-gray-4 m-4 px-2 flex transition duration-150 ease-in-out transform hover:-translate-y-1 hover:scale-105;
+  @apply w-14 sm:w-auto h-14 rounded-lg shadow-lg bg-off-white dark:bg-off-gray-4 m-4 px-2 flex transition duration-150 ease-in-out transform hover:-translate-y-1 hover:scale-105;
   border-color: #6cb3fa;
 }
 .skill-card-logo {

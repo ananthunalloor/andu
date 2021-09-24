@@ -34,8 +34,7 @@ export default {
       },
     ],
     script: [
-      {src: 'https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js'},
-      {src: 'https://threejs.org/examples/js/libs/stats.min.js'},
+      {src: 'https://cdnjs.cloudflare.com/ajax/libs/smooth-scroll/16.1.3/smooth-scroll.min.js'},
     ],
   },
 

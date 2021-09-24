@@ -1,5 +1,5 @@
 <template>
-    <section class="bg-off-white dark:bg-off-gray text-off-gray dark:text-off-white comforta" id="footer">
+    <section class="bg-white dark:bg-off-gray text-off-gray dark:text-off-white comforta" id="footer">
         <div class="w-full h-40 sm:flex flex-row justify-evenly text-center">
             <div class="hidden md:block text-5xl my-auto pr-16 py-8 border-r-2 border-gray-400"><h1>andu.</h1></div>
             <div class="my-auto text-sm"><p>copyright 2021 clipsy. all rights reserved</p></div>

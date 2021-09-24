@@ -80,7 +80,7 @@ export default {
   @apply p-5 mt-10;
 }
 .project-card {
-  @apply max-w-max mb-5 mx-auto sm:flex bg-off-white-2 dark:bg-off-gray-4 shadow rounded-md transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-105;
+  @apply max-w-max mb-5 mx-auto sm:flex bg-off-white dark:bg-off-gray-4 shadow rounded-md transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-105;
 }
 .project-image {
   @apply hidden sm:block sm:w-80 sm:h-80 flex-grow-0 flex-shrink-0 rounded-md;
@@ -93,7 +93,8 @@ export default {
   @apply max-w-lg p-4 flex-shrink flex-grow;
 }
 .project-details-header{
-  @apply md:text-5xl text-3xl px-3 border-l-2 border-purple-600 shadow-inner max-w-max;
+  @apply md:text-5xl text-3xl px-3 border-l-2 shadow-inner max-w-max;
+  border-color: #f47c7c;
 }
 .project-details-description{
 @apply text-xs pl-2 pt-4;
@@ -105,12 +106,18 @@ export default {
   @apply text-sm pl-2 pb-1 flex flex-wrap;
 }
 .detail-tag{
-  @apply text-off-gray px-1 m-1 bg-gray-300 hover:bg-purple-400 rounded shadow-inner transition duration-150 ease-in-out transform hover:-translate-y-1 hover:scale-105;
+  @apply text-off-gray px-1 m-1 bg-gray-300 rounded shadow-inner transition duration-150 ease-in-out transform hover:-translate-y-1 hover:scale-105;
+}
+.detail-tag:hover{
+  background-color: #f47c7c;
 }
 .project-button-holder{
   @apply flex flex-wrap;
 }
 .project-details-button{
-  @apply text-sm border hover:bg-purple-200 hover:text-off-gray border-off-gray-2 dark:border-off-white-2 px-3 py-2 m-2 rounded max-w-max transition duration-500 ease-out transform hover:translate-y-1 hover:scale-105;
+  @apply text-sm border hover:text-off-gray border-off-gray-2 dark:border-off-white-2 px-3 py-2 m-2 rounded max-w-max transition duration-500 ease-out transform hover:translate-y-1 hover:scale-105;
+}
+.project-details-button:hover{
+  background-color: rgba(252, 213, 65, .8);
 }
 </style>
