@@ -6,7 +6,7 @@
       </div>
       <div class="contact-content">
         <div class="form-container">
-          <form :model="messageForm" method="POST" v-on:submit.prevent="sendMessage(messageForm)">
+          <form :model="messageForm" v-on:submit.prevent="sendMessage(messageForm)">
             <div class="form-small-container">
             <div class="form-small">
               <label for="default" class="form-label">firstname</label>
@@ -65,7 +65,6 @@ export default {
     email: messageData.email,
     message: messageData.message
 })
-console.log(this.responce);
     },
   },
 }

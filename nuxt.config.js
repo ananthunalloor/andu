@@ -20,7 +20,28 @@ export default {
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description', content: 'Hello world, my name is ananthu and welcome to my corner of the internet. I am a self-taught frontend developer and passionate about technology, and is very interested in learning new technology and making cool stuff with it. This website is to showcase my abilities a web end developer.' },
-      { name: 'format-detection', content: 'telephone=no' }
+      { name: 'format-detection', content: 'telephone=no' },
+      {
+        hid: 'twitter:title',
+        name: 'twitter:title',
+        content: 'andu - ananthu nalloor, My corner of the internet',
+      },
+      {
+        hid: 'twitter:description',
+        name: 'twitter:description',
+        content:
+          'Hello world, my name is ananthu and welcome to my corner of the internet. I am a self-taught frontend developer and passionate about technology, and is very interested in learning new technology and making cool stuff with it. This website is to showcase my abilities a web end developer.',
+      },
+      {
+        hid: 'twitter:image',
+        name: 'twitter:image',
+        content: 'https://andu.netlify.app/logo.png',
+      },
+      {
+        hid: 'twitter:image:alt',
+        name: 'twitter:image:alt',
+        content: 'andu - ananthu nalloor',
+      },
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
