@@ -5,7 +5,7 @@ export default {
   //ssr: false,
 
   loadingIndicator: {
-    name: 'folding-cube',
+    name: 'cube-grid',
     color: '#FCFCFC',
     background: '#222831',
   },
@@ -19,7 +19,7 @@ export default {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: '' },
+      { hid: 'description', name: 'description', content: 'Hello world, my name is ananthu and welcome to my corner of the internet. I am a self-taught frontend developer and passionate about technology, and is very interested in learning new technology and making cool stuff with it. This website is to showcase my abilities a web end developer.' },
       { name: 'format-detection', content: 'telephone=no' }
     ],
     link: [
@@ -84,6 +84,20 @@ export default {
     minifyCSS: true,
     minifyJS: true,
   },
+  /*
+    robots: {
+    UserAgent: '*',
+    Allow: '/',
+    Disallow: '/dev',
+    Sitemap: 'https://clipsy.xyz/sitemap.xml',
+  },
+
+  sitemap: {
+    hostname: 'https://clipsy.xyz',
+    gzip: true,
+    lastmod: new Date(),
+    exclude: ['/dev'],
+  },*/
   tailwindcss: {
     exposeConfig: true,
     configPath: 'tailwind.config.js',

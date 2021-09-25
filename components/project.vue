@@ -13,8 +13,9 @@
               <span class="detail-tag" v-for="tag in project.tags" :key="tag">{{tag}}</span>
             </div>
             <div class="project-button-holder">
-              <div v-if="project.demo != ''" class="project-details-button"><a href="">demo</a></div>
-            <div class="project-details-button"><a href="">github</a></div>
+              <div v-if="project.demo != ''" class="project-details-button">
+                <a :href=project.demo target="_blank" rel="noopener">demo</a></div>
+            <div class="project-details-button"><a :href=project.github target="_blank" rel="noopener">github</a></div>
             </div>
           </div>
         </div>
@@ -31,15 +32,15 @@ export default {
           name:'clipsy',
           description:'clipsy is a web app that helps you easily download twitch clips, simply using the clip url.',
           demo:'https://clipsy.xyz',
-          background: require('assets/images/png/clipsy.png'),
+          background: require('assets/images/png/clipsy.webp'),
           tags:['nuxt','tailwind', 'axios','pwa','netlify','twitch api'],
           github:'https://github.com/ananthunalloor/',
         },
         {
           name:'andu',
           description:'andu is the personal website that i build to showcase by frontend abilities.',
-          demo:'',
-          background: require('assets/images/png/andu.png'),
+          demo:'https://andu.netlify.app',
+          background: require('assets/images/png/andu.webp'),
           tags:['nuxt','tailwind', 'axios', 'animate.css','netlify','netlify functions'],
           github:'https://github.com/ananthunalloor/',
         },
@@ -47,7 +48,7 @@ export default {
           name:'easy password gen extension',
           description:'it is an easy-to-use chrome/firefox extension to generate strong passwords.',
           demo:'',
-          background: require('assets/images/png/passgen.png'),
+          background: require('assets/images/png/passgen.webp'),
           tags:['vue','css', 'js'],
           github:'https://github.com/ananthunalloor/',
         },
@@ -84,7 +85,6 @@ export default {
 }
 .project-image {
   @apply hidden sm:block sm:w-80 sm:h-80 flex-grow-0 flex-shrink-0 rounded-md;
-  background-image: url('~assets/images/png/clipsy.png');
   background-repeat: no-repeat;
   background-size: contain;
   clip-path: polygon(0 0, 100% 0, 57% 100%, 0% 100%);

@@ -10,8 +10,8 @@
             <p>
               Hello, I’m Ananthu Kumar, I am a self-taught front end developer.
               Completed my diploma in electronics and communication engineering
-              in 2020. I am passionate about technology. For the past few years,
-              I have been learning web development.
+              in 2020.I am passionate about technology, and is very interested in learning new technology and making cool stuff with it.
+              For the past few years, I have been learning web development.
             </p>
           </div>
           <div class="about-action">

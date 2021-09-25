@@ -41,10 +41,10 @@
   background: linear-gradient(90deg, hsl(29, 92%, 70%) 0%, hsla(0, 87%, 73%, 1) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-      -webkit-transition: font-size 1s;
-       -moz-transition: font-size 1s;
-         -o-transition: font-size 1s;
-            transition: font-size 1s;
+      -webkit-transition: font-size .5s;
+       -moz-transition: font-size .5s;
+         -o-transition: font-size .5s;
+            transition: font-size .5s;
               -webkit-transition-timing-function: ease-in-out;
             -moz-transition-timing-function: ease-in-out;
             -o-transition-timing-function: ease-in-out;

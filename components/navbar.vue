@@ -12,8 +12,9 @@
         <NuxtLink to="/#project" class="navbar_a">projects</NuxtLink>
         <NuxtLink to="/#contact" class="navbar_a">contact</NuxtLink>
       </div>
-      <div class="navbar_theme" @click="toggle()">
-        <input name="theme" class="navbar_toggle" type="checkbox">
+      <div class="navbar_theme">
+        <label class="hidden" for="theme-change">theme changer</label>
+        <input name="theme" class="navbar_toggle" type="checkbox" @click="toggle()" id="theme-change">
       </div>
       <div class="nav-burger">
         <i class="fas fa-bars fa-lg"></i>
@@ -98,6 +99,6 @@ export default {
     transform:translate(100%);
 }
 .nav-burger{
-  @apply sm:hidden p-3 ml-2;
+  @apply hidden p-3 ml-2;
 }
 </style>
