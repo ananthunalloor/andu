@@ -10,8 +10,9 @@
             <p>
               Hello, I’m Ananthu Kumar, I am a self-taught front end developer.
               Completed my diploma in electronics and communication engineering
-              in 2020.I am passionate about technology, and is very interested in learning new technology and making cool stuff with it.
-              For the past few years, I have been learning web development.
+              in 2020. I am passionate about technology, and is very interested
+              in learning new technology and making cool stuff with it. For the
+              past few years, I have been learning web development.
             </p>
           </div>
           <div class="about-action">
@@ -20,23 +21,70 @@
           </div>
         </div>
       </div>
+      <div class="about-social">
+        <div class="social-header">
+          <h1>find me on.</h1>
+        </div>
+        <div class="social-holder">
+          <div class="social-link" v-for="social in socials" :key="social.name">
+            <a :href="social.link" target="_blank" ref="noopener">
+            <div class="flex flex-row">
+              <div class="px-2 py-1 bg-gray-100 dark:bg-gray-900 hover:text-blue-500"><i :class="social.icon"></i></div>
+              <div class="px-2 py-1 shadow-inner rounded border hover:border-blue-500"><p>{{social.name}}</p></div>
+            </div>
+            </a>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 </template>
 <script>
-export default {}
+export default {
+  data(){
+    return{
+      socials:[
+        {
+          name: 'github',
+          link: 'https://github.com/ananthunalloor/',
+          icon: 'fab fa-github-alt'
+        },
+        {
+          name: 'linkedin',
+          link: 'https://linkedin.com/in/ananthu-nalloor',
+          icon: 'fab fa-linkedin-in'
+        },
+        {
+          name: 'twitter',
+          link: 'https://twitter.com/ananthu_nalloor',
+          icon: 'fab fa-twitter'
+        },
+        {
+          name: 'instagram',
+          link: 'https://www.instagram.com/ananthu_nalloor/',
+          icon: 'fab fa-instagram'
+        },
+        {
+          name: 'mail',
+          link: 'mailto:ananthunalloor@gmail.com',
+          icon: 'far fa-envelope'
+        },
+      ]
+    }
+  }
+}
 </script>
 <style lang="postcss" scoped>
 .about {
   @apply w-full min-h-screen dark:bg-off-gray pt-12 md:pt-16 sm:pt-14 p-5;
-    background-image: url('~assets/images/circle.svg');
+  background-image: url('~assets/images/circle.svg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
 }
 .about-container {
-  @apply lg:mx-auto max-w-screen-xl;
+  @apply lg:mx-auto max-w-screen-xl flex flex-col;
 }
 .about-header {
   @apply text-7xl sm:text-8xl md:text-9xl pr-5 py-5 sm:py-7 sm:px-14;
@@ -52,13 +100,25 @@ export default {}
 .about-text {
   @apply p-1 pl-5 sm:ml-3 sm:p-6 pr-5 rounded-r-md text-lg border-l-2 border-opacity-50 border-green-500 shadow-inner bg-off-white-2 dark:bg-off-gray-4;
 }
-.about-action{
+.about-action {
   @apply p-6 flex text-sm;
 }
-.about-button-resume{
+.about-button-resume {
   @apply my-2 mx-3 p-2 pb-0 bg-green-500 text-off-gray shadow-2xl rounded-md transition duration-500 ease-out transform hover:-translate-y-1 hover:scale-110;
 }
-.about-button-contact{
+.about-button-contact {
   @apply m-2 p-2 pb-1 border-2 border-green-500 text-green-500 shadow-inner rounded-md transition duration-500 ease-out transform hover:-translate-y-1 hover:scale-110;
+}
+.about-social{
+  @apply w-11/12 md:w-8/12 sm:w-10/12 mx-auto;
+}
+.social-holder{
+  @apply flex flex-wrap max-w-max mx-auto;
+}
+.social-header {
+  @apply text-center pt-5 pb-5 text-2xl text-off-gray dark:text-off-white;
+}
+.social-link{
+  @apply m-1 text-off-gray dark:text-white rounded shadow-md bg-off-white-2 dark:bg-off-gray-2;
 }
 </style>
