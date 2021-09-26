@@ -28,7 +28,7 @@ export default {}
 </script>
 <style lang="postcss" scoped>
 .about {
-  @apply w-full min-h-screen dark:bg-off-gray;
+  @apply w-full min-h-screen dark:bg-off-gray pt-12 md:pt-16 sm:pt-14 p-5;
     background-image: url('~assets/images/circle.svg');
   background-repeat: no-repeat;
   background-size: cover;
@@ -36,7 +36,7 @@ export default {}
   background-attachment: fixed;
 }
 .about-container {
-  @apply pt-12 md:pt-20 sm:pt-14 p-5 max-w-screen-xl lg:mx-auto;
+  @apply lg:mx-auto max-w-screen-xl;
 }
 .about-header {
   @apply text-7xl sm:text-8xl md:text-9xl pr-5 py-5 sm:py-7 sm:px-14;

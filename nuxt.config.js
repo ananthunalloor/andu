@@ -30,7 +30,11 @@ export default {
         hid: 'twitter:description',
         name: 'twitter:description',
         content:
-          'Hello world, my name is ananthu and welcome to my corner of the internet. I am a self-taught frontend developer and passionate about technology, and is very interested in learning new technology and making cool stuff with it. This website is to showcase my abilities a web end developer.',
+          'Hello world, my name is ananthu and welcome to my corner of the internet. I am a self-taught frontend developer and passionate about technology, and is very interested in learning new technology and making cool stuff with it. This website is to showcase my abilities as a web end developer.',
+      },
+      {
+        name: 'keywords',
+        content:'frontend,html,css,js,sass,tailwind,bootstrap,vue.js,nuxt,react,backend,firebase,nodejs,django,tool,git,photoshop,figma,postman,lunacy,exposure,postcss,adobe xd,illustrator,projects,clipsy,andu,easy password gen extension,'
       },
       {
         hid: 'twitter:image',
@@ -49,13 +53,6 @@ export default {
         rel: 'stylesheet',
         href: 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css',
       },
-      {
-        rel: 'stylesheet',
-        href: 'https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css',
-      },
-    ],
-    script: [
-      {src: 'https://cdnjs.cloudflare.com/ajax/libs/smooth-scroll/16.1.3/smooth-scroll.min.js'},
     ],
   },
 
@@ -110,11 +107,11 @@ export default {
     UserAgent: '*',
     Allow: '/',
     Disallow: '/dev',
-    Sitemap: 'https://clipsy.xyz/sitemap.xml',
+    Sitemap: 'https://andu.netlify.app/sitemap.xml',
   },
 
   sitemap: {
-    hostname: 'https://clipsy.xyz',
+    hostname: 'https://andu.netlify.app',
     gzip: true,
     lastmod: new Date(),
     exclude: ['/dev'],

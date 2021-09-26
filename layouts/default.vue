@@ -2,7 +2,7 @@
 <section>
     <Navbar/>
     <Nuxt/>
-    <Footer/>
+    <LazyFooter/>
 </section>
 </template>
 <script>

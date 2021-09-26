@@ -2,8 +2,9 @@
   <section class="project comforta" id="project">
     <div class="project-container">
       <div class="project-header"><h1>projects</h1></div>
+      <div class="project-subheader"><h2>here are some of the projects.</h2></div>
       <div class="project-content">
-        <div class="project-card"  v-for="project in projects" :key="project.name">
+        <div class="project-card" v-for="project in projects" :key="project.name">
           <div class="project-image" :style="{'background-image': 'url('+project.background+')' }"></div>
           <div class="project-details">
             <div class="project-details-header"><h1>{{project.name}}</h1></div>
@@ -45,7 +46,7 @@ export default {
           github:'https://github.com/ananthunalloor/',
         },
         {
-          name:'easy password gen extension',
+          name:'easy password gen',
           description:'it is an easy-to-use chrome/firefox extension to generate strong passwords.',
           demo:'',
           background: require('assets/images/png/passgen.webp'),
@@ -76,6 +77,9 @@ export default {
   background-size: contain;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+.project-subheader{
+  @apply text-center pt-10 pb-5 text-2xl text-off-gray dark:text-off-white;
 }
 .project-content {
   @apply p-5 mt-10;

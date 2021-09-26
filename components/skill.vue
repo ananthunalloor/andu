@@ -6,45 +6,45 @@
       </div>
       <div class="skill-box">
         <div class="skill-frontend">
-          <div class="frontend skill-text-header"><h1>frontend</h1></div>
+          <div class="frontend skill-text-header"><h2>frontend</h2></div>
           <div class="skill-holder">
             <div class="skill-card" v-for="skill in frontend" :key="skill.name">
               <div class="skill-card-logo" :style="{'background-image': 'url('+skill.url+')' }"></div>
               <div class="skill-card-text">
-                <h1 class="pl-5 pt-3">{{skill.name}}</h1>
+                <h3 class="pl-5 pt-3">{{skill.name}}</h3>
               </div>
             </div>
           </div>
         </div>
         <div class="skill-backend">
-          <div class="backend skill-text-header"><h1>backend</h1></div>
+          <div class="backend skill-text-header"><h2>backend</h2></div>
           <div class="skill-holder">
             <div class="skill-card" v-for="skill in backend" :key="skill.name">
               <div class="skill-card-logo" :style="{'background-image': 'url('+skill.url+')' }"></div>
               <div class="skill-card-text">
-                <h1 class="pl-5 pt-3">{{skill.name}}</h1>
+                <h3 class="pl-5 pt-3">{{skill.name}}</h3>
               </div>
             </div>
           </div>
         </div>
         <div class="skill-tool">
-          <div class="tools skill-text-header"><h1>tool</h1></div>
+          <div class="tools skill-text-header"><h4>tool</h4></div>
         <div class="skill-holder">
           <div class="skill-card" v-for="skill in tool" :key="skill.name">
             <div class="skill-card-logo" :style="{'background-image': 'url('+skill.url+')' }"></div>
             <div class="skill-card-text">
-              <h1 class="pl-5 pt-3">{{skill.name}}</h1>
+              <h5 class="pl-5 pt-3">{{skill.name}}</h5>
             </div>
           </div>
         </div>
         </div>
         <div class="skill-exposure">
-          <div class="exposure skill-text-header"><h1>exposure</h1></div>
+          <div class="exposure skill-text-header"><h3>exposure</h3></div>
           <div class="skill-holder">
             <div class="skill-card" v-for="skill in exposure" :key="skill.name">
               <div class="skill-card-logo" :style="{'background-image': 'url('+skill.url+')' }"></div>
               <div class="skill-card-text">
-                <h1 class="pl-5 pt-3">{{skill.name}}</h1>
+                <h5 class="pl-5 pt-3">{{skill.name}}</h5>
               </div>
             </div>
           </div>

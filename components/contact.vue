@@ -58,7 +58,6 @@ export default {
   },
   methods:{
     async sendMessage(messageData){
-      console.log(messageData.firstName);
       this.responce = this.$axios.$post('/functions/contact',{
 		firstname: messageData.firstName,
     lastname: messageData.lastName,

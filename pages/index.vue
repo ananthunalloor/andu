@@ -1,9 +1,9 @@
 <template>
 <main>
 <Landing/>
-<About/>
-<Skill/>
-<Project/>
-<Contact/>
+<LazyAbout/>
+<LazySkill/>
+<LazyProject/>
+<LazyContact/>
 </main>
 </template>
