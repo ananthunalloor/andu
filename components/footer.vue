@@ -5,7 +5,7 @@
             <div class="my-auto text-sm"><p>copyright 2021 clipsy. all rights reserved</p></div>
             <div class="mx-auto my-auto sm:mx-0">
                 <div class="flex flex-row mx-auto max-w-max">
-                <div class="p-1 rounded-md m-2 shadow border hover:border-blue-300" v-for="social in socials" :key="social.name"><a :href="social.link" target="_blank" ref="noopener"><i :class="social.icon"></i></a></div>
+                <div class="p-1 rounded-md m-2 shadow hover:text-blue-500" v-for="social in socials" :key="social.name"><a :href="social.link" target="_blank" ref="noopener"><i :class="social.icon"></i></a></div>
                 </div>
             </div>
         </div>
