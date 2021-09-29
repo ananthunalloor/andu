@@ -1,19 +1,36 @@
 exports.handler = async function(event, context) {
 
-    if (event.httpMethod !== 'POST') {
+    if (event.httpMethod !== 'GET') {
         return {
             statusCode: 405,
             body: 'Method Not Allowed',
-            headers: { 'Allow': 'POST' }
+            headers: { 'Allow': 'GET' }
         }
     }
-    const params = JSON.parse(event.body)
-
-    if (!params.email && !params.message) {
-        return { statusCode: 422, body: 'All data are required.' }
+    const params = event.queryStringParameters;
+    if (params.email == '' || params.message == '' || params.firstname == '') {
+        return {
+            statusCode: 200,
+            body: JSON.stringify({
+                status: 422,
+                message: 'all data required!'},),
+                headers: {"Content-type": "application/json"},
+        }
+    }
+    else if(params.email && params.firstname && params.lastname && params.message){
+        return {
+            statusCode: 200,
+            body: JSON.stringify({
+                status: 200,
+                message: 'message has been send! Thank you.'},),
+                headers: {"Content-type": "application/json"},
+        }
     }
     return {
-        statusCode: 200,
-        body: 'message:Message Send.',
+        statusCode: 500,
+        body: JSON.stringify({
+            status: 500,
+            message: 'sorry. something went worng!'},),
+            headers: {"Content-type": "application/json"},
     }
 };

@@ -1,32 +1,56 @@
-exports.handler = async function(event, context) {
+exports.handler = async function (event, context) {
 
     const sgMail = require('@sendgrid/mail')
     sgMail.setApiKey(process.env.SG_API_KEY)
-    if (event.httpMethod !== 'POST') {
+
+    if (event.httpMethod !== 'GET') {
         return {
             statusCode: 405,
             body: 'Method Not Allowed',
-            headers: { 'Allow': 'POST' }
+            headers: { 'Allow': 'GET' }
         }
     }
-    const params = JSON.parse(event.body)
+    const params = event.queryStringParameters;
 
-    if (!params.email && !params.message) {
-        return { statusCode: 422, body: 'All data are required.' }
+    if (params.email == '' || params.message == '' || params.firstname == '') {
+        return {
+            statusCode: 200,
+            body: JSON.stringify({
+                status: 422,
+                message: 'all data required!'},),
+                headers: {"Content-type": "application/json"},
+        }
     }
-    else{
-        console.log(params.email);
+    else if(params.email && params.firstname && params.lastname && params.message) {
         const msg = {
             to: process.env.SG_TO,
             from: process.env.SG_FROM,
-            subject: 'New message from '+ params.firstname +' '+params.lastname,
+            subject: 'New message from ' + params.firstname + ' ' + params.lastname,
             text: params.message,
-            html: params.email + ' : '+'<strong>'+params.message+'</strong>',
-          }
-          sgMail.send(msg).then(() => {console.log('Email sent')}).catch((error) => {console.error(error)})
+            html: params.email + ' : ' + '<strong>' + params.message + '</strong>',
+        }
+        sgMail.send(msg).then(() => {console.log('Email sent');})
+            .catch((error) => {
+                console.error(error)
+                return {
+                    statusCode: 500,
+                    body: error,
+                }
+            })
+            return {
+                statusCode: 200,
+                body: JSON.stringify({
+                    status: 200,
+                    message: 'message has been send! Thank you.'},),
+                    headers: {"Content-type": "application/json"},
+            }
     }
-    return {
-        statusCode: 200,
-        body: 'message:Message Send.',
+    
+    return { 
+        statusCode: 500,
+        body: JSON.stringify({
+            status: 500,
+            message: 'sorry. something went worng!'},),
+            headers: {"Content-type": "application/json"}
     }
 };
