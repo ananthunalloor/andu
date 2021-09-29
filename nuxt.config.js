@@ -19,7 +19,7 @@ export default {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: 'Hello world, my name is ananthu and welcome to my corner of the internet. I am a self-taught frontend developer and passionate about technology, and is very interested in learning new technology and making cool stuff with it. This website is to showcase my abilities a web end developer.' },
+      { hid: 'description', name: 'description', content: 'Hello world, my name is ananthu and welcome to my corner of the internet. I am a self-taught frontend developer and passionate about technology, and is very interested in learning new technology and making cool stuff with it. This website is to showcase my abilities as a web end developer.' },
       { name: 'format-detection', content: 'telephone=no' },
       {
         hid: 'twitter:title',
