@@ -29,7 +29,10 @@ exports.handler = async function (event, context) {
             text: params.message,
             html: params.email + ' : ' + '<strong>' + params.message + '</strong>',
         }
-        sgMail.send(msg).then(() => {console.log('Email sent');})
+        await new Promise((resolve) =>{
+            sgMail.send(msg).then(() => {
+                console.log('Email sent');
+                resolve('done');})
             .catch((error) => {
                 console.error(error)
                 return {
@@ -37,6 +40,7 @@ exports.handler = async function (event, context) {
                     body: error,
                 }
             })
+        })
             return {
                 statusCode: 200,
                 body: JSON.stringify({
