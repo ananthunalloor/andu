@@ -123,6 +123,7 @@ export default {
 }
 .project-details-button:hover{
  //background: linear-gradient(90deg, hsla(40, 94%, 74%, 1) 52%, hsla(60, 89%, 72%, 1) 100%);
- background: linear-gradient(270deg, hsla(40, 94%, 74%, 1) 24%, hsla(60, 89%, 72%, 1) 100%);
+ //background: linear-gradient(270deg, hsla(40, 94%, 74%, 1) 24%, hsla(60, 89%, 72%, 1) 100%);
+ @apply bg-off-gray dark:bg-off-white text-white dark:text-off-gray;
 }
 </style>
