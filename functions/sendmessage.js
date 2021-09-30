@@ -38,6 +38,8 @@ exports.handler = async function (event, context) {
                 return {
                     statusCode: 500,
                     body: error,
+                    headers: {"Content-type": "application/json",
+                    "access-control-allow-origin": 'https://andu.pages.dev/'},
                 }
             })
         })
@@ -46,7 +48,8 @@ exports.handler = async function (event, context) {
                 body: JSON.stringify({
                     status: 200,
                     message: 'message has been send! Thank you.'},),
-                    headers: {"Content-type": "application/json"},
+                    headers: {"Content-type": "application/json",
+                    "access-control-allow-origin": 'https://andu.pages.dev/'},
             }
     }
     
@@ -55,6 +58,7 @@ exports.handler = async function (event, context) {
         body: JSON.stringify({
             status: 500,
             message: 'sorry. something went worng!'},),
-            headers: {"Content-type": "application/json"}
+            headers: {"Content-type": "application/json",
+            "access-control-allow-origin": 'https://andu.pages.dev/'}
     }
 };
