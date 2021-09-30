@@ -109,7 +109,7 @@ export default {
   methods: {
     async sendMessage(messageData) {
      this.res = await this.$axios
-        .$get('/functions/sendmessage', {params:{
+        .$get('https://andu.netlify.app/functions/sendmessage', {params:{
           firstname: messageData.firstName,
           lastname: messageData.lastName,
           email: messageData.email,
