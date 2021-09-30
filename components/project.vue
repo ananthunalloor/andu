@@ -35,7 +35,7 @@ export default {
           demo:'https://clipsy.xyz',
           background: require('assets/images/png/clipsy.webp'),
           tags:['nuxt','tailwind', 'axios','pwa','netlify','twitch api'],
-          github:'https://github.com/ananthunalloor/',
+          github:'https://github.com/ananthunalloor/Clipsy',
         },
         {
           name:'andu',
@@ -43,7 +43,7 @@ export default {
           demo:'https://andu.netlify.app',
           background: require('assets/images/png/andu.webp'),
           tags:['nuxt','tailwind', 'axios', 'animate.css','netlify','netlify functions'],
-          github:'https://github.com/ananthunalloor/',
+          github:'https://github.com/ananthunalloor/andu',
         },
         {
           name:'easy password gen',
@@ -51,7 +51,7 @@ export default {
           demo:'',
           background: require('assets/images/png/passgen.webp'),
           tags:['vue','css', 'js'],
-          github:'https://github.com/ananthunalloor/',
+          github:'https://github.com/ananthunalloor/EasyPasswordGen',
         },
       ]
     }
