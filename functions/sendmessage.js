@@ -7,9 +7,11 @@ exports.handler = async function (event, context) {
     if (event.httpMethod !== 'GET') {
         console.log('The Message Request is not a GET Method');
         return {
-            statusCode: 405,
+            statusCode: 200,
             body: 'Method Not Allowed',
-            headers: { 'Allow': 'GET' }
+            headers: { 'Allow': 'GET',
+                     "Access-Control-Request-Method": 'GET',
+                      "Access-Control-Allow-Origin" : 'https://andu.pages.dev'}
         }
     }
     const params = event.queryStringParameters;
