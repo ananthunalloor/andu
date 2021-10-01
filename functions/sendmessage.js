@@ -1,9 +1,11 @@
 exports.handler = async function (event, context) {
 
+    console.log('New Message Request');
     const sgMail = require('@sendgrid/mail')
     sgMail.setApiKey(process.env.SG_API_KEY)
 
     if (event.httpMethod !== 'GET') {
+        console.log('The Message Request is not a GET Method');
         return {
             statusCode: 405,
             body: 'Method Not Allowed',
@@ -13,6 +15,7 @@ exports.handler = async function (event, context) {
     const params = event.queryStringParameters;
 
     if (params.email == '' || params.message == '' || params.firstname == '') {
+        console.log('paramter are missing!');
         return {
             statusCode: 200,
             body: JSON.stringify({
@@ -33,7 +36,7 @@ exports.handler = async function (event, context) {
         }
         await new Promise((resolve) =>{
             sgMail.send(msg).then(() => {
-                console.log('Email sent');
+                console.log('Email has been sent');
                 resolve('done');})
             .catch((error) => {
                 console.error(error)
@@ -56,7 +59,7 @@ exports.handler = async function (event, context) {
                     "Access-Control-Allow-Origin" : 'https://andu.pages.dev'},
             }
     }
-    
+    console.log('Something Went Wrong here.');
     return { 
         statusCode: 500,
         body: JSON.stringify({
