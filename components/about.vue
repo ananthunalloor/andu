@@ -16,8 +16,8 @@
             </p>
           </div>
           <div class="about-action">
-            <div class="about-button-resume"><button>RESUME</button></div>
-            <div class="about-button-contact"><button>CONTACT</button></div>
+            <div class="about-button-resume"><a target="_blank" rel="noopener" href="/Ananthu-Kumar-Resume.pdf">RESUME</a></div>
+            <div class="about-button-contact"><NuxtLink to="/#contact">CONTACT</NuxtLink></div>
           </div>
         </div>
       </div>
