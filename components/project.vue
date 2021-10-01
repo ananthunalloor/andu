@@ -42,7 +42,7 @@ export default {
           description:'andu is the personal website that i build to showcase by frontend abilities.',
           demo:'https://andu.netlify.app',
           background: require('assets/images/png/andu.webp'),
-          tags:['nuxt','tailwind', 'axios', 'animate.css','netlify','netlify functions'],
+          tags:['nuxt','tailwind', 'axios', 'animate.css','cloudflare','netlify functions'],
           github:'https://github.com/ananthunalloor/andu',
         },
         {
