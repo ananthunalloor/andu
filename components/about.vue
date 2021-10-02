@@ -27,7 +27,7 @@
         </div>
         <div class="social-holder">
           <div class="social-link" v-for="social in socials" :key="social.name">
-            <a :href="social.link" target="_blank" rel="noopener">
+            <a :href="social.link" target="_blank" rel="noopener" :title="social.name" :aria-label="social.name">
             <div class="flex flex-row">
               <div class="px-2 py-1 bg-gray-100 dark:bg-gray-900 hover:text-blue-500 rounded-l"><i :class="social.icon"></i></div>
               <div class="px-2 py-1 shadow-inner rounded-r border border-transparent hover:border-blue-500"><p>{{social.name}}</p></div>

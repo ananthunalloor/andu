@@ -28,7 +28,7 @@
           </div>
         </div>
         <div class="skill-tool">
-          <div class="tools skill-text-header"><h4>tool</h4></div>
+          <div class="tools skill-text-header"><h2>tool</h2></div>
         <div class="skill-holder">
           <div class="skill-card" v-for="skill in tool" :key="skill.name">
             <div class="skill-card-logo" :style="{'background-image': 'url('+skill.url+')' }"></div>
@@ -39,7 +39,7 @@
         </div>
         </div>
         <div class="skill-exposure">
-          <div class="exposure skill-text-header"><h3>exposure</h3></div>
+          <div class="exposure skill-text-header"><h2>exposure</h2></div>
           <div class="skill-holder">
             <div class="skill-card" v-for="skill in exposure" :key="skill.name">
               <div class="skill-card-logo" :style="{'background-image': 'url('+skill.url+')' }"></div>

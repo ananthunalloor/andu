@@ -13,8 +13,8 @@
         <NuxtLink to="/#contact" class="navbar_a">contact</NuxtLink>
       </div>
       <div class="navbar_theme">
-        <label for="theme-change">
-        <input name="theme" class="navbar_toggle" type="checkbox" @click="toggle()" id="theme-change">
+        <label for="theme-toggle" aria-label="theme-toggle">
+        <input name="theme" class="navbar_toggle" type="checkbox" @click="toggle()" id="theme-toggle">
         </label>
       </div>
       <div class="nav-burger">
