@@ -54,6 +54,12 @@ export default {
         href: 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css',
       },
     ],
+    script :[
+      {
+        src: "https://precious-finch.pikapod.net/script.js",
+        "data-website-id": "f2645ccf-9036-4658-8ab7-5829d3f2e0ec"
+      }
+    ]
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
