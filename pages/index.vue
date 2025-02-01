@@ -1,5 +1,6 @@
 <template>
 <main>
+<Banner/>
 <Landing/>
 <LazyAbout/>
 <LazySkill/>
